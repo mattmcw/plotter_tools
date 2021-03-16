@@ -1,0 +1,14 @@
+A3	11-3/4" x 16-1/2"	297 x 420 mm
+A4	8-1/4" x 11-3/4"	210 x 297 mm
+8x10 8" x 10"  203 x 254 mm
+
+
+dot pixels calculation
+
+W=format.w/pen_size
+H=format.h/pen_size
+
+so
+
+W= 203/0.3 = 676 
+H= 254/0.3 = 846
