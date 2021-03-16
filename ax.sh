@@ -11,4 +11,5 @@ axicli -f ./axidraw_conf_robothouse_a3.py \
 	--model 2 \
 	--pen_pos_up 20 \
 	--pen_pos_down 60 \
+	-o ~/progress.svg \
 	"${@}"
