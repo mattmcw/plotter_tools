@@ -1,0 +1,16 @@
+{
+  "name": "sticky",
+  "version": "0.0.1",
+  "description": "Generate a sticky note",
+  "main": "sticky.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mattmcw",
+  "license": "MIT",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "fs-extra": "^9.1.0",
+    "hersheytext": "^2.0.0"
+  }
+}
