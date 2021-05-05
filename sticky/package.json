@@ -11,6 +11,6 @@
   "dependencies": {
     "argparse": "^2.0.1",
     "fs-extra": "^9.1.0",
-    "hersheytext": "^2.0.0"
+    "hersheytext": "github:mattmcw/hersheytextjs"
   }
 }

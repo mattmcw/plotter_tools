@@ -40,16 +40,6 @@ async function loadFont (fontPath) {
 }
 */
 
-function textPos (str) {
-	const len = str.length;
-	const w = len * W;
-	const h = H;
-	const x = (75.0 - w) / 2.0;
-	const y = (75.0 - h) / 2.0; 
-
-	return { x : x * UNIT, y : y * UNIT };
-}
-
 async function main () {
 	const fontPath = args.font;
 	const text = args.text;
@@ -66,8 +56,8 @@ async function main () {
 		console.error(err);
 	}
 
-	//options.pos = { x: 0, y: 0 };
-	options.pos = textPos(text);
+	options.pos = { x: 10, y: 10 };
+	//options.pos = textPos(text);
 	data = hershey.renderTextSVG(text, options);
 	//console.log(`${header}\n${data}\n${footer}`)
 
