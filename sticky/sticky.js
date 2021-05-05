@@ -42,13 +42,13 @@ async function loadFont (fontPath) {
 
 async function main () {
 	const fontPath = args.font;
-	const text = args.text;
-	const lines = text.split('\n');
+	const text = args.text.replace('\\n', '\n');
 	const size = args.size || '8.5x11';
 	const output = args.output || 'sticky.svg';
 	let data;
 
 	//console.log(fontPath)
+	console.log(text)
 
 	try {
 		//await loadFont(fontPath);
@@ -56,7 +56,7 @@ async function main () {
 		console.error(err);
 	}
 
-	options.pos = { x: 10, y: 10 };
+	options.pos = { x: 500, y: 10 };
 	//options.pos = textPos(text);
 	data = hershey.renderTextSVG(text, options);
 	//console.log(`${header}\n${data}\n${footer}`)
