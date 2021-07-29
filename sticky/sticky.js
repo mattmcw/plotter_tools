@@ -40,6 +40,17 @@ async function loadFont (fontPath) {
 }
 */
 
+function textPos (str) {
+	const len = str.length;
+	const w = len * W;
+	const h = H;
+	const x = (75.0 - w) / 2.0;
+	const y = (75.0 - h) / 2.0; 
+
+	return { x : x * UNIT, y : y * UNIT };
+}
+
+
 async function main () {
 	const fontPath = args.font;
 	const text = args.text.replace('\\n', '\n');
